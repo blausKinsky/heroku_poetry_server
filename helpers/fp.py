@@ -111,8 +111,6 @@ def find_phonemes_ngram(num, ph_list, sentences,ngrm):
 
 # print(type(Find_Phoneme))
 # g = FP.phonemeList(-2, ['AH0', 'N'], sentence)
-z = find_phonemes_ngram(-2, ['AH0', 'N'], sentence, 5)
-ph = FP.phonemeList_ngram(-2, ['AH0', 'N'], sentence, 3)
 
 # for i in range(5):
 #     print(find_phonemes_ngram(-2, ['AH0', 'N'], sentence, i))

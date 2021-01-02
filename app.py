@@ -2,7 +2,6 @@ from flask import Flask, render_template
 import random
 import sys
 import nltk
-nltk.download()
 import time
 import fp
 from fp import r_punct_list
@@ -12,11 +11,6 @@ from helpers.this_helper import gen_random_num
 from nltk.tokenize import WhitespaceTokenizer, sent_tokenize
 from helpers.fp import find_phonemes_ngram
 from erasure_function import erase_words, erase_sentence, random_l, list_to_str, seq_of_sents
-# sys.path.append('/Users/ademirji/PycharmProjects/NaturalLangage/Tuesdays/python_tutoring/poetry_app/helpers/')
-# h_dir = '/Users/ademirji/PycharmProjects/NaturalLangage/Tuesdays/python_tutoring/poetry_app/helpers'
-# h_dir ='./helpers'
-# sys.path.append('h_dir')
-
 #to run this program: cd into the directory then type python3 server.py.
 # then go to the localhost:5000/name_of_app
 
@@ -25,7 +19,7 @@ prondict = nltk.corpus.cmudict.dict()
 f = open('artistStatements.txt')
 raw2 = f.read()
 sentence = sent_tokenize(raw2)
-
+#
 phoneNum = -2
 phonemes = ['AH0', 'N']
 scrubbed = ''
@@ -34,9 +28,9 @@ allit_list = []
 a = find_phonemes(phoneNum, phonemes, sentence, rhyme_list)
 one_phone = gen_one_phone(rhyme_list)
 find_alliteration(sentence, allit_list)
-# print(allit_list)
-
-s = ' '
+## print(allit_list)
+#
+#s = ' '
 for i in range(len(allit_list)):
     n = int(random.random()*len(allit_list))
     my_phrase = allit_list[n]

@@ -79,14 +79,6 @@ def erase_sentence(list_of_strings):
     # return my_erase_list
 
 # print(erase_sentence(this_choice))
-erase_sentence(this_choice)
-# print(my_erase_list)
-
-for i in erase_sentence(this_choice):
-    ran = random.random()
-    if ran > .5:
-        print()
-    print(i)
 
 #think of how a map version should be structured to do a version of the function above
 # def map_version(list_of_strings):
