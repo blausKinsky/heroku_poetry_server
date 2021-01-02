@@ -2,6 +2,7 @@ from flask import Flask, render_template
 import random
 import sys
 import nltk
+nltk.download()
 import time
 import fp
 from fp import r_punct_list
