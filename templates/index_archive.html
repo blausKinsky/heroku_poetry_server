@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+  <title>phonetic snowball example</title>
+  <style type="text/css">
+    body {
+      max-width: 600px;
+      font-family: 'Helvetica', Verdana, Arial;
+      
+      margin: 1em auto;
+      background-color: #aabbcc
+    }
+  </style>
+
+<script src="//code.jquery.com/jquery-1.6.2.min.js"></script>
+<script>
+    $(document).ready(function() {
+    // $("#btn_refresh").click(function(){
+    // location.reload(false);
+    // });
+    $("#btn_reload").click(function(){
+    location.reload(true);
+    });
+    });
+</script>
+</head>
+<body>
+
+
+<!-- <input type="" name=""> Type="button" VALUE="Reload Page" onClick="history.go(0)">
+ -->
+ <!--    <form>
+      <input type="button" onclick="window.location.href='http://localhost:5000/fibo_phone';" value="next" />
+    </form> -->
+<button id="btn_reload">next</button>
+
+<!--     <button onclick="window.location.href='http://localhost:5000/phonetic_snow';">
+      next
+    </button> -->
+
+
+  <h3>
+  {% autoescape false %} 
+  {{words}}
+  {% endautoescape %}
+
+</h3>
+</body>
+</html>
